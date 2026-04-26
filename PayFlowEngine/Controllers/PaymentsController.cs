@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using PayFlowEngine.Services;
 using PayFlowEngine.Models;
+using PayFlowEngine.Services;
+using PayFlowEngine.Storage;
 
 namespace PayFlowEngine.Controllers;
 
@@ -11,22 +12,18 @@ public class PaymentsController : ControllerBase
     private readonly PaymentService _paymentService = new();
 
     [HttpPost("pay")]
-    public IActionResult Pay([FromBody] PayRequest request)
+    public IActionResult Pay(
+        [FromBody] PayRequest request,
+        [FromHeader(Name = "Idempotency-Key")] string? idempotencyKey)
     {
-        try
-        {
-            var result = _paymentService.Pay(
-                request.CustomerId,
-                request.Amount,
-                request.Currency
-            );
+        var result = _paymentService.Pay(
+            request.CustomerId,
+            request.Amount,
+            request.Currency,
+            idempotencyKey
+        );
 
-            return Ok(result);
-        }
-        catch (ArgumentException ex)
-        {
-            return BadRequest(ex.Message);
-        }
+        return Ok(ApiResponse<Transaction>.Ok(result));
     }
 
     [HttpGet("status/{transactionId}")]
@@ -35,26 +32,25 @@ public class PaymentsController : ControllerBase
         var result = _paymentService.GetStatus(transactionId);
 
         if (result == null)
-            return NotFound();
+            return NotFound(ApiResponse<string>.Fail("Transaction not found."));
 
-        return Ok(result);
+        return Ok(ApiResponse<Transaction>.Ok(result));
     }
 
     [HttpPost("refund")]
     public IActionResult Refund([FromBody] RefundRequest request)
     {
-        try
-        {
-            var result = _paymentService.Refund(request.TransactionId);
+        var result = _paymentService.Refund(request.TransactionId);
 
-            if (result == null)
-                return NotFound();
+        if (result == null)
+            return NotFound(ApiResponse<string>.Fail("Transaction not found."));
 
-            return Ok(result);
-        }
-        catch (ArgumentException ex)
-        {
-            return BadRequest(ex.Message);
-        }
+        return Ok(ApiResponse<Transaction>.Ok(result));
+    }
+
+    [HttpGet("logs")]
+    public IActionResult GetLogs()
+    {
+        return Ok(ApiResponse<List<PaymentLog>>.Ok(InMemoryPaymentStore.Logs));
     }
 }

@@ -8,7 +8,7 @@ namespace PayFlowEngine.Services
         private readonly BankService _bankService = new();
         private readonly NetworkService _networkService = new();
 
-        public Transaction Pay(string customerId, decimal amount, string currency)
+        public Transaction Pay(string customerId, decimal amount, string currency, string? idempotencyKey)
         {
             if (string.IsNullOrWhiteSpace(customerId))
                 throw new ArgumentException("CustomerId is required.");
@@ -23,6 +23,12 @@ namespace PayFlowEngine.Services
 
             if (!allowedCurrencies.Contains(currency.ToUpper()))
                 throw new ArgumentException("Currency must be AZN, USD or EUR.");
+
+            if (!string.IsNullOrWhiteSpace(idempotencyKey) &&
+                InMemoryPaymentStore.IdempotencyKeys.ContainsKey(idempotencyKey))
+            {
+                return InMemoryPaymentStore.IdempotencyKeys[idempotencyKey];
+            }
 
             var transaction = new Transaction
             {
@@ -45,7 +51,18 @@ namespace PayFlowEngine.Services
                 transaction.Status = "DECLINED";
                 transaction.UpdatedAt = DateTime.UtcNow;
 
+                InMemoryPaymentStore.Logs.Add(new PaymentLog
+                {
+                    TransactionId = transaction.TransactionId,
+                    Action = "PAY",
+                    Message = "Payment declined by bank"
+                });
+
                 InMemoryPaymentStore.Transactions.Add(transaction);
+
+                if (!string.IsNullOrWhiteSpace(idempotencyKey))
+                    InMemoryPaymentStore.IdempotencyKeys[idempotencyKey] = transaction;
+
                 return transaction;
             }
 
@@ -56,14 +73,35 @@ namespace PayFlowEngine.Services
                 transaction.Status = "FAILED";
                 transaction.UpdatedAt = DateTime.UtcNow;
 
+                InMemoryPaymentStore.Logs.Add(new PaymentLog
+                {
+                    TransactionId = transaction.TransactionId,
+                    Action = "PAY",
+                    Message = "Payment failed at payment network"
+                });
+
                 InMemoryPaymentStore.Transactions.Add(transaction);
+
+                if (!string.IsNullOrWhiteSpace(idempotencyKey))
+                    InMemoryPaymentStore.IdempotencyKeys[idempotencyKey] = transaction;
+
                 return transaction;
             }
 
             transaction.Status = "SUCCESS";
             transaction.UpdatedAt = DateTime.UtcNow;
 
+            InMemoryPaymentStore.Logs.Add(new PaymentLog
+            {
+                TransactionId = transaction.TransactionId,
+                Action = "PAY",
+                Message = "Payment completed successfully"
+            });
+
             InMemoryPaymentStore.Transactions.Add(transaction);
+
+            if (!string.IsNullOrWhiteSpace(idempotencyKey))
+                InMemoryPaymentStore.IdempotencyKeys[idempotencyKey] = transaction;
 
             return transaction;
         }
@@ -82,10 +120,17 @@ namespace PayFlowEngine.Services
                 return null;
 
             if (transaction.Status != "SUCCESS")
-                throw new ArgumentException("Only successful transactions can be refunded.");
+                throw new ArgumentException("Only successful and unrefunded transactions can be refunded.");
 
             transaction.Status = "REFUNDED";
             transaction.UpdatedAt = DateTime.UtcNow;
+
+            InMemoryPaymentStore.Logs.Add(new PaymentLog
+            {
+                TransactionId = transaction.TransactionId,
+                Action = "REFUND",
+                Message = "Payment refunded successfully"
+            });
 
             return transaction;
         }
