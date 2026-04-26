@@ -1,0 +1,50 @@
+[
+  {
+    "ContainingType": "PayFlowEngine.Controllers.PaymentsController",
+    "Method": "Pay",
+    "RelativePath": "api/Payments/pay",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "PayFlowEngine.Models.PayRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PayFlowEngine.Controllers.PaymentsController",
+    "Method": "Refund",
+    "RelativePath": "api/Payments/refund",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "PayFlowEngine.Models.RefundRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PayFlowEngine.Controllers.PaymentsController",
+    "Method": "GetStatus",
+    "RelativePath": "api/Payments/status/{transactionId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "transactionId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
