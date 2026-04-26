@@ -3,32 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\mxeli\\Desktop\\payflow-engine\\PayFlowEngine\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FF5720C0-24E9-4612-A6E9-EF878104E4A2}|PayFlowEngine.csproj|c:\\users\\mxeli\\desktop\\payflow-engine\\payflowengine\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF5720C0-24E9-4612-A6E9-EF878104E4A2}|PayFlowEngine.csproj|solutionrelative:controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9449EAC4-5E5B-E686-A134-8EDBD5519B20}|PayFlowEngine.csproj|c:\\users\\mxeli\\desktop\\payflow-engine\\payflowengine\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9449EAC4-5E5B-E686-A134-8EDBD5519B20}|PayFlowEngine.csproj|solutionrelative:services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF5720C0-24E9-4612-A6E9-EF878104E4A2}|PayFlowEngine.csproj|c:\\users\\mxeli\\desktop\\payflow-engine\\payflowengine\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF5720C0-24E9-4612-A6E9-EF878104E4A2}|PayFlowEngine.csproj|solutionrelative:services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9449EAC4-5E5B-E686-A134-8EDBD5519B20}|PayFlowEngine.csproj|c:\\users\\mxeli\\desktop\\payflow-engine\\payflowengine\\services\\bankservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9449EAC4-5E5B-E686-A134-8EDBD5519B20}|PayFlowEngine.csproj|solutionrelative:services\\bankservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF5720C0-24E9-4612-A6E9-EF878104E4A2}|PayFlowEngine.csproj|c:\\users\\mxeli\\desktop\\payflow-engine\\payflowengine\\models\\payrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF5720C0-24E9-4612-A6E9-EF878104E4A2}|PayFlowEngine.csproj|solutionrelative:models\\payrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9449EAC4-5E5B-E686-A134-8EDBD5519B20}|PayFlowEngine.csproj|c:\\users\\mxeli\\desktop\\payflow-engine\\payflowengine\\services\\networkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9449EAC4-5E5B-E686-A134-8EDBD5519B20}|PayFlowEngine.csproj|solutionrelative:services\\networkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF5720C0-24E9-4612-A6E9-EF878104E4A2}|PayFlowEngine.csproj|c:\\users\\mxeli\\desktop\\payflow-engine\\payflowengine\\models\\refundrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF5720C0-24E9-4612-A6E9-EF878104E4A2}|PayFlowEngine.csproj|solutionrelative:models\\refundrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9449EAC4-5E5B-E686-A134-8EDBD5519B20}|PayFlowEngine.csproj|c:\\users\\mxeli\\desktop\\payflow-engine\\payflowengine\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9449EAC4-5E5B-E686-A134-8EDBD5519B20}|PayFlowEngine.csproj|solutionrelative:controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF5720C0-24E9-4612-A6E9-EF878104E4A2}|PayFlowEngine.csproj|c:\\users\\mxeli\\desktop\\payflow-engine\\payflowengine\\models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF5720C0-24E9-4612-A6E9-EF878104E4A2}|PayFlowEngine.csproj|solutionrelative:models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9449EAC4-5E5B-E686-A134-8EDBD5519B20}|PayFlowEngine.csproj|c:\\users\\mxeli\\desktop\\payflow-engine\\payflowengine\\models\\refundrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9449EAC4-5E5B-E686-A134-8EDBD5519B20}|PayFlowEngine.csproj|solutionrelative:models\\refundrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF5720C0-24E9-4612-A6E9-EF878104E4A2}|PayFlowEngine.csproj|c:\\users\\mxeli\\desktop\\payflow-engine\\payflowengine\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF5720C0-24E9-4612-A6E9-EF878104E4A2}|PayFlowEngine.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9449EAC4-5E5B-E686-A134-8EDBD5519B20}|PayFlowEngine.csproj|c:\\users\\mxeli\\desktop\\payflow-engine\\payflowengine\\models\\payrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9449EAC4-5E5B-E686-A134-8EDBD5519B20}|PayFlowEngine.csproj|solutionrelative:models\\payrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF5720C0-24E9-4612-A6E9-EF878104E4A2}|PayFlowEngine.csproj|c:\\users\\mxeli\\desktop\\payflow-engine\\payflowengine\\storage\\inmemorypaymentstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF5720C0-24E9-4612-A6E9-EF878104E4A2}|PayFlowEngine.csproj|solutionrelative:storage\\inmemorypaymentstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9449EAC4-5E5B-E686-A134-8EDBD5519B20}|PayFlowEngine.csproj|c:\\users\\mxeli\\desktop\\payflow-engine\\payflowengine\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9449EAC4-5E5B-E686-A134-8EDBD5519B20}|PayFlowEngine.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9449EAC4-5E5B-E686-A134-8EDBD5519B20}|PayFlowEngine.csproj|c:\\users\\mxeli\\desktop\\payflow-engine\\payflowengine\\storage\\inmemorypaymentstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9449EAC4-5E5B-E686-A134-8EDBD5519B20}|PayFlowEngine.csproj|solutionrelative:storage\\inmemorypaymentstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9449EAC4-5E5B-E686-A134-8EDBD5519B20}|PayFlowEngine.csproj|c:\\users\\mxeli\\desktop\\payflow-engine\\payflowengine\\models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9449EAC4-5E5B-E686-A134-8EDBD5519B20}|PayFlowEngine.csproj|solutionrelative:models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 109,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,7 +54,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
+              "Title": "NetworkService.cs",
+              "DocumentMoniker": "C:\\Users\\mxeli\\Desktop\\payflow-engine\\PayFlowEngine\\Services\\NetworkService.cs",
+              "RelativeDocumentMoniker": "Services\\NetworkService.cs",
+              "ToolTip": "C:\\Users\\mxeli\\Desktop\\payflow-engine\\PayFlowEngine\\Services\\NetworkService.cs*",
+              "RelativeToolTip": "Services\\NetworkService.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T18:01:21.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BankService.cs",
+              "DocumentMoniker": "C:\\Users\\mxeli\\Desktop\\payflow-engine\\PayFlowEngine\\Services\\BankService.cs",
+              "RelativeDocumentMoniker": "Services\\BankService.cs",
+              "ToolTip": "C:\\Users\\mxeli\\Desktop\\payflow-engine\\PayFlowEngine\\Services\\BankService.cs*",
+              "RelativeToolTip": "Services\\BankService.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T17:57:49.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "RefundRequest.cs",
               "DocumentMoniker": "C:\\Users\\mxeli\\Desktop\\payflow-engine\\PayFlowEngine\\Models\\RefundRequest.cs",
               "RelativeDocumentMoniker": "Models\\RefundRequest.cs",
@@ -54,12 +88,11 @@
               "RelativeToolTip": "Models\\RefundRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T17:28:13.886Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-26T17:28:13.886Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "PayRequest.cs",
               "DocumentMoniker": "C:\\Users\\mxeli\\Desktop\\payflow-engine\\PayFlowEngine\\Models\\PayRequest.cs",
               "RelativeDocumentMoniker": "Models\\PayRequest.cs",
@@ -67,12 +100,11 @@
               "RelativeToolTip": "Models\\PayRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T17:26:11.499Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-26T17:26:11.499Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\mxeli\\Desktop\\payflow-engine\\PayFlowEngine\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -80,38 +112,37 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T17:20:40.679Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-26T17:20:40.679Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "PaymentsController.cs",
               "DocumentMoniker": "C:\\Users\\mxeli\\Desktop\\payflow-engine\\PayFlowEngine\\Controllers\\PaymentsController.cs",
               "RelativeDocumentMoniker": "Controllers\\PaymentsController.cs",
               "ToolTip": "C:\\Users\\mxeli\\Desktop\\payflow-engine\\PayFlowEngine\\Controllers\\PaymentsController.cs",
               "RelativeToolTip": "Controllers\\PaymentsController.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAYwCcAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAgwDEAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-26T17:10:21.34Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "PaymentService.cs",
               "DocumentMoniker": "C:\\Users\\mxeli\\Desktop\\payflow-engine\\PayFlowEngine\\Services\\PaymentService.cs",
               "RelativeDocumentMoniker": "Services\\PaymentService.cs",
               "ToolTip": "C:\\Users\\mxeli\\Desktop\\payflow-engine\\PayFlowEngine\\Services\\PaymentService.cs",
               "RelativeToolTip": "Services\\PaymentService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAwDQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-26T17:07:30.767Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "InMemoryPaymentStore.cs",
               "DocumentMoniker": "C:\\Users\\mxeli\\Desktop\\payflow-engine\\PayFlowEngine\\Storage\\InMemoryPaymentStore.cs",
               "RelativeDocumentMoniker": "Storage\\InMemoryPaymentStore.cs",
@@ -119,12 +150,11 @@
               "RelativeToolTip": "Storage\\InMemoryPaymentStore.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T17:05:59.802Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-26T17:05:59.802Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Transaction.cs",
               "DocumentMoniker": "C:\\Users\\mxeli\\Desktop\\payflow-engine\\PayFlowEngine\\Models\\Transaction.cs",
               "RelativeDocumentMoniker": "Models\\Transaction.cs",
@@ -132,8 +162,7 @@
               "RelativeToolTip": "Models\\Transaction.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T17:00:44.882Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-26T17:00:44.882Z"
             }
           ]
         },

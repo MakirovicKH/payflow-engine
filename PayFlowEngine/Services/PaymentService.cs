@@ -5,6 +5,9 @@ namespace PayFlowEngine.Services
 {
     public class PaymentService
     {
+        private readonly BankService _bankService = new();
+        private readonly NetworkService _networkService = new();
+
         public Transaction Pay(string customerId, decimal amount, string currency)
         {
             if (string.IsNullOrWhiteSpace(customerId))
@@ -27,11 +30,38 @@ namespace PayFlowEngine.Services
                 CustomerId = customerId,
                 Amount = amount,
                 Currency = currency.ToUpper(),
-                Status = "SUCCESS",
+                Status = "PENDING",
                 BankReference = $"BANK-{Guid.NewGuid()}",
                 NetworkReference = $"EPT-{Guid.NewGuid()}",
                 UpdatedAt = DateTime.UtcNow
             };
+
+            transaction.Status = "PROCESSING";
+
+            var bankApproved = _bankService.ProcessPayment(amount);
+
+            if (!bankApproved)
+            {
+                transaction.Status = "DECLINED";
+                transaction.UpdatedAt = DateTime.UtcNow;
+
+                InMemoryPaymentStore.Transactions.Add(transaction);
+                return transaction;
+            }
+
+            var networkApproved = _networkService.ConfirmTransaction();
+
+            if (!networkApproved)
+            {
+                transaction.Status = "FAILED";
+                transaction.UpdatedAt = DateTime.UtcNow;
+
+                InMemoryPaymentStore.Transactions.Add(transaction);
+                return transaction;
+            }
+
+            transaction.Status = "SUCCESS";
+            transaction.UpdatedAt = DateTime.UtcNow;
 
             InMemoryPaymentStore.Transactions.Add(transaction);
 

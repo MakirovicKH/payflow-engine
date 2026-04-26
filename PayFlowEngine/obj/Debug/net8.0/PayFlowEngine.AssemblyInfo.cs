@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PayFlowEngine")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a1fa1d62305e9d44a73184e328160dbdba5a689d")]
 [assembly: System.Reflection.AssemblyProductAttribute("PayFlowEngine")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PayFlowEngine")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

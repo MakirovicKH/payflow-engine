@@ -34,3 +34,4 @@ C:\Users\mxeli\Desktop\payflow-engine\PayFlowEngine\obj\Debug\net8.0\refint\PayF
 C:\Users\mxeli\Desktop\payflow-engine\PayFlowEngine\obj\Debug\net8.0\PayFlowEngine.pdb
 C:\Users\mxeli\Desktop\payflow-engine\PayFlowEngine\obj\Debug\net8.0\PayFlowEngine.genruntimeconfig.cache
 C:\Users\mxeli\Desktop\payflow-engine\PayFlowEngine\obj\Debug\net8.0\ref\PayFlowEngine.dll
+C:\Users\mxeli\Desktop\payflow-engine\PayFlowEngine\obj\Debug\net8.0\PayFlowEngine.sourcelink.json
