@@ -1,5 +1,6 @@
 ﻿using System.Net;
 using System.Text.Json;
+using PayFlowEngine.Models;
 
 namespace PayFlowEngine.Middlewares;
 
@@ -23,13 +24,9 @@ public class ExceptionHandlingMiddleware
             context.Response.StatusCode = (int)HttpStatusCode.BadRequest;
             context.Response.ContentType = "application/json";
 
-            var response = new
-            {
-                success = false,
-                error = ex.Message
-            };
-
+            var response = ApiResponse<string>.Fail(ex.Message);
             var json = JsonSerializer.Serialize(response);
+
             await context.Response.WriteAsync(json);
         }
         catch (Exception)
@@ -37,13 +34,9 @@ public class ExceptionHandlingMiddleware
             context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
             context.Response.ContentType = "application/json";
 
-            var response = new
-            {
-                success = false,
-                error = "Internal server error"
-            };
-
+            var response = ApiResponse<string>.Fail("Internal server error");
             var json = JsonSerializer.Serialize(response);
+
             await context.Response.WriteAsync(json);
         }
     }
